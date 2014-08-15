@@ -73,7 +73,7 @@ public class MediaRouterButtonActivity extends FragmentActivity {
 
 		// Add the callback to start device discovery
 		mMediaRouter.addCallback(mMediaRouteSelector, mMediaRouterCallback,
-				MediaRouter.CALLBACK_FLAG_PERFORM_ACTIVE_SCAN);
+				MediaRouter.CALLBACK_FLAG_REQUEST_DISCOVERY);
 	}
 
 	@Override
