@@ -51,7 +51,7 @@ public class MediaRouterDiscoveryActivity extends Activity {
 
 	private ArrayList<String> mRouteNames = new ArrayList<String>();
 	private ArrayAdapter<String> mAdapter;
-	private final ArrayList<MediaRouter.RouteInfo> mRouteInfos = new ArrayList<MediaRouter.RouteInfo>();
+	private final CopyOnWriteArrayList<MediaRouter.RouteInfo> mRouteInfos = new CopyOnWriteArrayList<MediaRouter.RouteInfo>();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
